@@ -31,8 +31,22 @@ You will be given an array of all the family members' ages,
  function familyReport(ages) {
   // TODO:
   // sort the ages into ascending order
+  for (let i = 0; i < ages.length; i++) {
+    for (let j = 0; j < ages.length; j++) {
+    
+    }
+  }
 
   // get the smallest age (first index)
 
   // get the largest age (last index)
 }
+
+// helper function used to swap two elements in bubble sort
+function swap(a,b) {
+  let temp = b;
+  b = a;
+  a = temp;
+  return [a,b]
+}
+
