@@ -99,7 +99,11 @@ const APP_VERSION = v4.8
 const re = /v(\d+(\.\d)*)/i;
 console.log(APP_VERSION.match(re)) // ['v4.8', '4.8' '.8', index: 0, input: 'v4.8', groups: undefined]
 
-Example 2:
+Example 2: VISA CREDIT CARD PREFIX
+
+const visaCard = 4019 40
+const re = /4019 40(\d
+
 
 
 Example 3: 
