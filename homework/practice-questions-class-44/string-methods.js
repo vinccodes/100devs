@@ -101,17 +101,27 @@ console.log(APP_VERSION.match(re)) // ['v4.8', '4.8' '.8', index: 0, input: 'v4.
 
 Example 2: VISA CREDIT CARD PREFIX
 
-const visaCard = 4019 40
-const re = /4019 40(\d
+const visaCard = 4019 40XX XXXX XXXX
+const re = /4009\s?43\d{2}\s?\d{4}\s?\d{4}
 
+console.log(visacard.match(re))
 
+TODO:
+Example 3: HEX COLOR CODES
 
-Example 3: 
+const myColor = #f5e6ca
+const reColor = /#([0-9]|[abcdef]*){3|6}
 
 
 ==========
-repeat
+repeat - create new copy of string contain the concatenated string together N times.
 ==========
+
+Example 1:
+
+Example 2:
+
+Example 3:
 
 ==========
 replace
