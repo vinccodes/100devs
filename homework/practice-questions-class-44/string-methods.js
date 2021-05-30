@@ -119,9 +119,20 @@ repeat - create new copy of string contain the concatenated string together N ti
 
 Example 1:
 
-Example 2:
+const awesome = "Bob";
+console.log(awesome.repeat(3)); // BobBobBob
 
-Example 3:
+Example 2: Using String Template Literals + repeat()
+
+const firstPhrase = "I have to"
+const secondPhrase = "git good"
+
+console.log(`${firstPhrase} ${secondPhrase.repeat(5)}`);
+
+Example 3: Hip hip Hooray x3
+
+const hooray = "Hip hip hooray! "
+console.log(`Three cheers for Leon! ${hooray.repeat(3)}`);
 
 ==========
 replace
