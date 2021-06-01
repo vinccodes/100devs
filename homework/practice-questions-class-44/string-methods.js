@@ -117,7 +117,7 @@ const reColor = /#([0-9]|[abcdef]*){3|6}
 repeat - create new copy of string contain the concatenated string together N times.
 ==========
 
-Example 1:
+Example 1: Basic Repeat
 
 const awesome = "Bob";
 console.log(awesome.repeat(3)); // BobBobBob
@@ -135,9 +135,31 @@ const hooray = "Hip hip hooray! "
 console.log(`Three cheers for Leon! ${hooray.repeat(3)}`);
 
 ==========
-replace
+replace - returns news string that finds matches of a pattern and replaces with a replacement
+            DEFAULT only replace first match, use /g flag replace ALL matches
 ==========
 
+Examples 1: replace(regexp, newSubstr)
+@regexp     regular expression object or literal
+@newSubstr  the string used to replace matching @regexp
+
+const myRe = /h2
+const h2 = "<h2>This is some headline</h2>";
+const newH3 = h2.replace(myRe, "h3")
+
+
+Example 2: replace(regexp, replacerFunction)
+
+const convertEmail = (stringInput) => {
+    
+    if (stringInput.contains('@gmail') {
+        // remove gmail replace with outlook
+
+        // return the string
+    }
+}
+
+Example 3: 
 ==========
 search
 ==========
