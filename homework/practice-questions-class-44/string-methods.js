@@ -143,23 +143,28 @@ Examples 1: replace(regexp, newSubstr)
 @regexp     regular expression object or literal
 @newSubstr  the string used to replace matching @regexp
 
-const myRe = /h2
+const myRe = /h2/g
 const h2 = "<h2>This is some headline</h2>";
 const newH3 = h2.replace(myRe, "h3")
 
 
 Example 2: replace(regexp, replacerFunction)
 
-const convertEmail = (stringInput) => {
-    
-    if (stringInput.contains('@gmail') {
-        // remove gmail replace with outlook
 
-        // return the string
-    }
+const person1 = "person1@gmail.com"
+person1.replace(/@gmail/g, convertEmail);
+const convertEmail = (match) => {
+    console.log(match);
+    return "@outlook"
 }
 
 Example 3: 
+
+const randomSentence = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus risus nec nisi sagittis, non sagittis nisl egestas. Donec est neque, rhoncus in arcu sed, scelerisque convallis enim. Sed non elit nec lorem pellentesque gravida non at enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+const output = randomSentence.replace(/lorem/ig, "SIKE")
+
+
 ==========
 search
 ==========
