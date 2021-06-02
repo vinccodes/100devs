@@ -166,8 +166,26 @@ const output = randomSentence.replace(/lorem/ig, "SIKE")
 
 
 ==========
-search
+search - finds matching RegExp, and returns the starting index where found OR -1 NOT FOUND
 ==========
+
+const rainbow = "red yellow pink green purple orange blue";
+rainbow.search(/salmon/) // -1 not found
+
+Example 2: 
+
+const rainbow = "red yellow pink green purple orange blue";
+rainbow.search(/orange/) // 29
+
+Example 3: Phone Number finding "-" character
+const hotline = "999 9999";
+hotline.search(/[-]/g) // -1
+
+
+const hotline = "999-9999 123-3459";
+hotline.search(/[-]/g) // 3
+
+
 
 ==========
 slice
